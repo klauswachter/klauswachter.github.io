@@ -2,7 +2,7 @@
 # The title of the site
 title = "A new site"
 # The name of the author
-author = "Author Here"
+author = "Klaus Wachter"
 
 # Site navigation links
 # You can remove any navigation links or add more link by adding following lines
@@ -67,10 +67,10 @@ minWidth = 200
 #     ascending = false
 # Photo sections are added in the order encountered.
 [[section]]
-title = "Section 1"
+title = "Landscapes"
 text = ""
-slug = "section-1"
-folder = "~/photos/section-1"
+slug = "landscapes"
+folder = "originals"
 ascending = false
 
 # You can override thumbnail and original dimensions for each section
