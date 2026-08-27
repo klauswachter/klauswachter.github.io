@@ -80,12 +80,12 @@ ascending = false
 # originalWidth = 2560
 # minOriginalHeight = 1920
 
-[[section]]
-title = "Section 2"
-text = ""
-slug = "section-2"
-folder = "~/photos/section-2"
-ascending = false
+# [[section]]
+# title = "Section 2"
+# text = ""
+# slug = "section-2"
+# folder = "~/photos/section-2"
+# ascending = false
 
 # Section-specific image dimension settings
 # thumbnailWidth = 320
