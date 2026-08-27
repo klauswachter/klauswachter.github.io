@@ -1,0 +1,50 @@
+name: Build and deploy
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download foto
+        run: |
+          mkdir -p /tmp/foto-bin
+          curl -sL https://github.com/waynezhang/foto/releases/latest/download/foto_Linux_x86_64.tar.gz \
+            | tar xz -C /tmp/foto-bin
+
+      - name: Restore resize cache
+        uses: actions/cache@v4
+        with:
+          path: .foto
+          key: foto-cache-${{ github.sha }}
+          restore-keys: foto-cache-
+
+      - name: Export site
+        run: /tmp/foto-bin/foto export -o ./public
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
