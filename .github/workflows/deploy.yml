@@ -17,7 +17,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Download foto
         run: |
@@ -26,7 +26,7 @@ jobs:
             | tar xz -C /tmp/foto-bin
 
       - name: Restore resize cache
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: .foto
           key: foto-cache-${{ github.sha }}
@@ -35,7 +35,7 @@ jobs:
       - name: Export site
         run: /tmp/foto-bin/foto export -o ./public
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: ./public
 
@@ -47,4 +47,4 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
