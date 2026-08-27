@@ -20,7 +20,7 @@ body {
 
 header { margin: 4em auto 0 auto; text-align: center; font-family: 'Waiting for the Sunrise'; }
 header img.avatar { width: 160px; height: auto; border-radius: 50%; }
-header .title { font-size: 1.6em; font-weight: bold; line-height: 1.6em; }
+header .title { display: none; }
 header .description { line-height: 1.6em; }
 header nav { margin: 1em 0; }
 header nav a { margin: 0 0.6em; }
