@@ -1,6 +1,6 @@
 [site]
 # The title of the site
-title = "A new site"
+title = "Klaus Wachter"
 # The name of the author
 author = "Klaus Wachter"
 
@@ -17,11 +17,11 @@ link = "https://example.com"
 
 [[site.nav]]
 icon = "assets/icons/instagram.svg"
-link = "https://instagram.com/xxx"
+link = "https://instagram.com/photography_by_klaus_wachter"
 
-[[site.nav]]
-icon = "assets/icons/twitter.svg"
-link = "https://twitter.com/xxx"
+# [[site.nav]]
+# icon = "assets/icons/twitter.svg"
+# link = "https://twitter.com/xxx"
 
 # Lightbox options
 [lightbox]
