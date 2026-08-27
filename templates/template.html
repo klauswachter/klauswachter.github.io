@@ -10,7 +10,12 @@
     <meta name="author" content="{{ .Config.site.author }}">
     <meta property="og:title" content="{{ .Config.site.title }}">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="/">
+    <meta property="og:url" content="https://klauswachter.com/">
+    <meta property="og:image" content="https://klauswachter.com/media/preview.jpg">
+    <meta property="og:image:alt" content="Sunset over the Alps">
+    {{- if .Config.site.description }}
+    <meta property="og:description" content="{{ .Config.site.description }}">
+    {{- end }}
     {{- if .Config.site.description }}
     <meta property="og:description" content="{{ .Config.site.description }}">
     {{- end }}
