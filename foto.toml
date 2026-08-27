@@ -70,7 +70,7 @@ minWidth = 200
 title = "Landscapes"
 text = ""
 slug = "landscapes"
-folder = "originals"
+folder = "output"
 ascending = false
 
 # You can override thumbnail and original dimensions for each section
