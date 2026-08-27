@@ -3,6 +3,8 @@
 title = "Klaus Wachter"
 # The name of the author
 author = "Klaus Wachter"
+# URL of custom domain
+url = "https://klauswachter.com"
 
 # Site navigation links
 # You can remove any navigation links or add more link by adding following lines
