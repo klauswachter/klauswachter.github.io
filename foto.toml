@@ -11,9 +11,9 @@ author = "Klaus Wachter"
 #     link = ""
 # Navigation links are added in the order encountered.
 
-[[site.nav]]
-icon = "assets/icons/home.svg"
-link = "https://example.com"
+# [[site.nav]]
+# icon = "assets/icons/home.svg"
+# link = "https://example.com"
 
 [[site.nav]]
 icon = "assets/icons/instagram.svg"
